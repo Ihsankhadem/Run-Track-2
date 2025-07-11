@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature</title>
+
+  <style>
+  
+    @media screen and (max-width: 768px) {
+      .tableau-responsive { display:block; }       
+      .ligne-responsive   { display:flex; flex-direction:column; }
+      .cellule-responsive  {
+        width:100% !important;
+        display:block;
+        text-align:center !important;
+        padding:20px !important;
+        box-sizing:border-box;
+      }
+      .logo-responsive img { max-width:80px; }
+    }
+
+    /* --------- Centrage et marge pour la photo --------- */
+    .infos-personnelles       { text-align:center; }
+    .infos-personnelles img   {
+      display:block;
+      margin:0 auto 10px;
+      width:80px; height:80px; border-radius:50%;
+    }
+  </style>
+</head>
+<body>
+
+<table class="tableau-responsive" style="width:100%;font-family:Arial,sans-serif;font-size:14px;line-height:1.5;" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr class="ligne-responsive">
+        
+      <!-- Colonne gauche : photo centrée + nom -->
+      <td class="cellule-responsive infos-personnelles" style="background-color:#f1f1f1;width:35%;padding:10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" alt="Photo de Ihsan Khadem" />
+
+        <strong style="font-size:16px;color:#000;">Ihsan KHADEM</strong><br />
+        <span style="font-size:14px;color:#333;">Développeuse Web</span><br /><br />
+        <a style="text-decoration:none;color:#007bff;" href="tel:0101010101">07 01 01 01 01</a><br />
+        <a style="text-decoration:none;color:#007bff;" href="mailto:ihsan.khadem@email.com">ihsan.khadem@email.com</a><br /><br />
+        <span style="color:#333;">Lyon, France</span>
+      </td>
+
+    
+      <td class="cellule-responsive logo-responsive" style="text-align:center;background:#9b9999;padding:15px;width:20%;">
+        <img src="Images/sign.png"
+             alt="Signature Ihsan"
+             style="max-height:100px;" />
+      </td>
+
+      
+      <td class="cellule-responsive" style="background:#9b9999;padding:30px;width:30%;">&nbsp;</td>
+    </tr>
+
+    
+    <tr>
+      <td style="text-align:center;padding:10px;" colspan="3">
+        <a style="text-decoration:none;color:#007bff;margin-right:10px;" href="https://linkedin.com" target="_blank">LinkedIn</a> |
+        <a style="text-decoration:none;color:#007bff;margin-right:10px;" href="https://github.com" target="_blank">GitHub</a> |
+        <a style="text-decoration:none;color:#007bff;margin-right:10px;" href="https://facebook.com" target="_blank">Facebook</a> |
+        <a style="text-decoration:none;color:#007bff;" href="https://portfolio.com" target="_blank">Portfolio</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
