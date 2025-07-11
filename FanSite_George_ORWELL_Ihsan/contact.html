@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fansite.css">
+
+    <title>Document</title>
+
+
+</head>
+<body class="contact-page">
+
+    <!-- partie visible de la page avc body -->
+    
+     <h1> Contact</h1>
+  <p>« * » Indique les champs nécessaires</p>
+
+   <form action="#" method="post">   <!-- début d'un formulaire HTML qui enverra les données avec la méthode POST -->
+    
+<fieldset> <!-- Champs du formulaire -->
+  <legend>Identité *</legend> <!-- Légende visible au‑dessus du fieldset ; ici Identité -->
+
+  <label for="prefixe">Préfixe *</label>
+  <select id="prefixe" name="prefixe" required>
+    <option value="">-- Choisir --</option>
+    <option value="M.">M.</option>
+    <option value="Mme">Mme</option>
+  </select> <!-- Ferme la liste déroulante. -->
+
+  <br><br>
+
+  <label for="prenom">Prénom *</label>
+  <input type="text" id="prenom" name="prenom" required>
+
+  <br><br>
+
+  <label for="nom">Nom *</label>
+  <input type="text" id="nom" name="nom" required>
+
+  <br><br>
+
+  <label for="email">E-mail *</label>
+  <input type="email" id="email" name="email" required>
+
+  <br><br>
+
+  <label for="telephone">Téléphone *</label>
+  <input type="tel" id="telephone" name="telephone" required>
+
+  <br><br>
+
+  <label for="message">Message </label>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+   <div class="check case">
+  <input type="checkbox" id="check case" name="check case">
+  <label for="check case">
+    J'accepte de recevoir des informations de la part de Orwell
+  </label>
+</div>
+
+<button type="envoie">Envoyer</button>
+
+</fieldset>
+
+</body>
+</html>
