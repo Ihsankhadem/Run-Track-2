@@ -1,0 +1,314 @@
+/* logout connect register profil contact */
+
+            /*               Reset & Base    */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*           Header             */
+.main-header {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-header nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.main-header nav a {
+    color: #ffcc00;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.main-header nav a:hover {
+    background: #ffcc00;
+    color: #1a1a1a;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin: 0.5rem 0;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+    color: #fff;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+main {
+    flex: 1; 
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+/* Container pour form de connexion, inscription et profil */
+.auth-container, .profile-section, .contact-form-section {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.auth-container h2, .profile-section h2, .contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+}
+
+/* Labels et inputs */
+.profile-form label, .contact-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="password"],
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.profile-form input:focus,
+.contact-form input:focus,
+.profile-form textarea:focus,
+.contact-form textarea:focus {
+    border-color: #ffcc00;
+}
+
+/* Boutons */
+.profile-form .btn, .contact-form input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-form .btn:hover, .contact-form input[type="submit"]:hover {
+    background-color: #e6b800;
+    color: #fff;
+}
+
+/* Messages d’erreurs et succès */
+.errors, .error {
+    background-color: #ffdddd;
+    color: #a33;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.success {
+    background-color: #ddffdd;
+    color: #2d7a2d;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Lien retour / navigation */
+.back-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.back-link a {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Contact page */
+.contact-content {
+    padding: 2rem;
+}
+
+.contact-hero, .contact-map {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+
+                                    /*            Galerie de Lyon        */
+
+.gallery-content {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery-intro {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.gallery-intro h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-intro p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.caption {
+    padding: 1rem;
+}
+
+.caption h3 {
+    color: #1a1a1a;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.caption p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .gallery-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-item img {
+        height: 180px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .auth-container, .profile-section, .contact-form-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .contact-img {
+        height: 200px;
+    }
+}
