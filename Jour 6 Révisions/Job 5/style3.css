@@ -1,0 +1,16 @@
+
+
+body {
+  background-color: rgb(203, 78, 78);
+  font-family: Verdana;
+}
+
+button{
+    background-color: #b7b25eb2; 
+  border-radius: 5px;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  display: block; 
+  font-size: 16px;
+}
